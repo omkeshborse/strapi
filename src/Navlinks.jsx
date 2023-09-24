@@ -5,7 +5,7 @@ const Navlinks = () => {
     <div className="nav-links">
       {sublinks.map((link) => {
         const { pageId, page } = link;
-        return <button></button>;
+        return <button key={pageId} className="nav-link">{page}</button>;
       })}
     </div>
   );
